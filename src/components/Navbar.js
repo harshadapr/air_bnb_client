@@ -90,7 +90,7 @@ export function NavbarMinimal({opened, open, close}) {
           key={"addListing"}
           icon={ IconAppsFilled}
           label= 'Add Listing'
-          onClick={() => {open()}}
+          onClick={() => {open(); console.log("opening modal")}}
         />
         </Stack>
       </Navbar.Section>
