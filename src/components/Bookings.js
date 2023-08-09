@@ -37,7 +37,7 @@ export default function Bookings() {
 
       // if logged in then call the booking endpoint
       axios
-        .get(`http://localhost:3000/listings/booked`, {
+        .get(`https://orange-red-hare-belt.cyclic.app/listings/booked`, {
           headers: {
             Authorization: `Bearer ${token}`, // Sending the token in the header
           },

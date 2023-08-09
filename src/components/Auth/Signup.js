@@ -33,7 +33,7 @@ export default function Signup() {
     setLoading(true); // Start loading
 
     try {
-      const response = await fetch("http://localhost:3000/auth/signup", {
+      const response = await fetch("https://orange-red-hare-belt.cyclic.app/auth/signup", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

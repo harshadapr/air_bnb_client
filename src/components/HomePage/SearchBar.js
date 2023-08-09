@@ -45,7 +45,7 @@ export default function SearchBar() {
 
       // if logged in then call the booking endpoint
       axios
-        .get(`http://localhost:3000/listings/booked`, {
+        .get(`https://orange-red-hare-belt.cyclic.app/listings/booked`, {
           headers: {
             Authorization: `Bearer ${token}`, // Sending the token in the header
           },
@@ -82,7 +82,7 @@ export default function SearchBar() {
       // if logged in then call the booking endpoint
       axios
         .post(
-          `http://localhost:3000/listings/book/${id}`,
+          `https://orange-red-hare-belt.cyclic.app/listings/book/${id}`,
           {},
           {
             headers: {
@@ -128,7 +128,7 @@ export default function SearchBar() {
 
   useEffect(() => {
     fetchBookedListing();
-    fetch("http://localhost:3000/listings/prices")
+    fetch("https://orange-red-hare-belt.cyclic.app/listings/prices")
       .then((response) => response.json())
       .then((data) => setPriceRange(data))
       .catch((error) => console.error("Failed fetching price range:", error));
@@ -139,13 +139,13 @@ export default function SearchBar() {
     let endpoint = "";
     switch (searchType) {
       case "name":
-        endpoint = `http://localhost:3000/listings/search?title=${title}`;
+        endpoint = `https://orange-red-hare-belt.cyclic.app/listings/search?title=${title}`;
         break;
       case "location":
-        endpoint = `http://localhost:3000/listings/search?location=${location}`;
+        endpoint = `https://orange-red-hare-belt.cyclic.app/listings/search?location=${location}`;
         break;
       case "price":
-        endpoint = `http://localhost:3000/listings/search?minPrice=${selectedPrice[0]}&maxPrice=${selectedPrice[1]}`;
+        endpoint = `https://orange-red-hare-belt.cyclic.app/listings/search?minPrice=${selectedPrice[0]}&maxPrice=${selectedPrice[1]}`;
         break;
       default:
         break;

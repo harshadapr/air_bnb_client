@@ -39,7 +39,7 @@ export default function AddListingModal({ opened, close }) {
 
 
     try {
-      await axios.post("http://localhost:3000/listings", {
+      await axios.post("https://orange-red-hare-belt.cyclic.app/listings", {
         title,
         description,
         location,
