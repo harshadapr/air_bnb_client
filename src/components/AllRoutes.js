@@ -28,6 +28,10 @@ export default function AllRoutes() {
       element: <LandingPage />,
     },
     {
+      path: "/",
+      element: <LandingPage />,
+    },
+    {
         path: "/login",
         element: <Login />
     },
