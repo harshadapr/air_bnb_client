@@ -87,9 +87,7 @@ export function LandingPage() {
             Breathtaking staying experience
           </Title>
           <Text className={classes.description} size="xl" mt="xl">
-            Build fully functional accessible web applications faster than ever
-            – Mantine includes more than 120 customizable components and hooks
-            to cover you in any situation
+          Experience the epitome of luxury with us. From serene rooms to world-class service, we ensure every moment is special. Reserve today and immerse yourself in a haven of comfort and sophistication. Your dream stay awaits.
           </Text>
 
           <Button

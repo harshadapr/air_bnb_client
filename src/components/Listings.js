@@ -36,7 +36,7 @@ export default function Listings() {
       }
 
       axios
-        .get(`https://orange-red-hare-belt.cyclic.app/listings?page=1&limit=100`, {
+        .get(`https://orange-red-hare-belt.cyclic.app/my-listings?page=1&limit=100`, {
           headers: {
             Authorization: `Bearer ${token}`, // Sending the token in the header
           },

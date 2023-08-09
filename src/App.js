@@ -8,7 +8,7 @@ import { useDisclosure } from '@mantine/hooks';
 
 function App() {
 
-  const [opened, { open, close }] = useDisclosure(true);
+  const [opened, { open, close }] = useDisclosure(false);
 
   return (
     <>
